@@ -1,9 +1,9 @@
 body { 
-    background-image: url("img/jakub_final.gif");
+    background-image: url("../img/jakub_final.gif");
     margin: 0;
     padding: 0;
     font: 12px/32px courier, monospace;
-    cursor: url(cursor.png), default;
+    cursor: url("../img/cursor.png"), default;
 }
 
 .text
@@ -17,5 +17,5 @@ body {
 }
 
 .jakub {
-    cursor: url(img/cursor1.png), auto;
+    cursor: url("../img/cursor1.png"), auto;
 }
