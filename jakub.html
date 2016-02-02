@@ -4,13 +4,24 @@
         <link href="css/jakub.css" rel="stylesheet"/>
         <title>JAKUB</title>
     </head>
-    <body>
+    <body style="cursor: url(img/cursor.png), default">
+        <script>
+            function mDown(obj) {
+                obj.style.cursor = 'url(img/cursor2.png), default';
+                obj.src = 'img/jakub_poked.png';
+            }
+
+            function mUp(obj) {
+                obj.style.cursor = 'url(img/cursor1.png), default';
+                obj.src = 'img/jakub.png';
+            }
+        </script>
         <div class="text">
             POKE THE JAKUB!
         </div>
         <div>
             <center>
-                <img style="cursor: url(img/cursor1.png), default" onMouseDown="this.src='img/jakub_poked.png'; this.cursor: url(img/cursor2.png), default;" onMouseUp="this.src='img/jakub.png'; this.cursor: url(img/cursor1.png), default;" onMouseOut="this.src='img/jakub.png'; this.cursor: url(img/cursor1.png), default;" src="img/jakub.png" width="600">
+                <img id="jakub" style="cursor: url(img/cursor1.png), default" onMouseDown="mDown(this)" onMouseUp="mUp(this)" onMouseOut="mUp(this)" src="img/jakub.png" width="600">
             </center>
         </div>
     </body>
